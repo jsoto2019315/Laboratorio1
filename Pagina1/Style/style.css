@@ -1,14 +1,16 @@
 @import url('https://fonts.cdnfonts.com/css/nairi');
 
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+}
 body {
     height: auto;
     scroll-behavior: smooth;
     font-family: 'Nairi', sans-serif;
-}
-.container{
-    background: rgb(22, 75, 96);
-    background: linear-gradient(190deg, rgba(22, 75, 96, 1) 0%, rgba(162, 255, 134, 1) 100%);
+    background: rgb(86,28,36);
+background: linear-gradient(139deg, rgba(86,28,36,1) 0%, rgba(199,183,163,1) 19%, rgba(232,216,196,1) 54%);
 }
 .general {
     display: flex;
@@ -20,20 +22,21 @@ body {
 
 .title {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 60px;
     font-size: 40px;
-    color: #e4e5e5
+    color: #0f0801
 }
 
 .info {
+    /* position: relative; */
+    margin-top: -100px;
     margin-bottom: 30px;
     display: block;
     align-items: start;
     justify-content: center;
     width: 80%;
     height: auto;
-    background-color: #1B6B93;
-    color: #e4e5e5;
+    color: #0f0801;
     border-radius: 8px;
     font-size: 20px;
     padding: 20px;
@@ -91,6 +94,56 @@ section img:hover{
 .subtopics{
     text-align: justify;
 }
+
+.navbar{
+    background-color: #6D2932;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    z-index: 2000;
+}
+
+.containerNav{
+    position: relative;
+    margin-top: 20px;
+
+}
+
+button{
+    background-color: transparent;
+    cursor: pointer;
+    color: #e4e5e5;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px 40px 20px 40px;
+}
+
+header{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon section{
+    width: 15%;
+    height: auto;
+}
+
+.icon .iconImg{
+    width: 40px;
+    opacity: 100;
+    &:hover{
+        width: 50px;
+    }
+}
+
+
 
 
 
