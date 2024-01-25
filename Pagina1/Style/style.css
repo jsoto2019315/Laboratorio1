@@ -1,17 +1,19 @@
 @import url('https://fonts.cdnfonts.com/css/nairi');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
 }
+
 body {
     height: auto;
     scroll-behavior: smooth;
     font-family: 'Nairi', sans-serif;
-    background: rgb(86,28,36);
-background: linear-gradient(139deg, rgba(86,28,36,1) 0%, rgba(199,183,163,1) 19%, rgba(232,216,196,1) 54%);
+    background: rgb(232, 216, 196);
+    background: linear-gradient(274deg, rgba(232, 216, 196, 1) 35%, rgba(170, 73, 87, 1) 90%, rgba(133, 69, 78, 1) 100%);
 }
+
 .general {
     display: flex;
     flex-direction: column;
@@ -42,11 +44,13 @@ background: linear-gradient(139deg, rgba(86,28,36,1) 0%, rgba(199,183,163,1) 19%
     padding: 20px;
     overflow: hidden;
 }
-.info .subtitles{
+
+.info .subtitles {
     font-size: 25px;
     text-decoration: underline;
 
 }
+
 .info p {
     margin: 20px;
     text-align: justify;
@@ -54,7 +58,7 @@ background: linear-gradient(139deg, rgba(86,28,36,1) 0%, rgba(199,183,163,1) 19%
     overflow: hidden;
 }
 
-section{
+section {
     /* margin: auto;
     margin-top: -55px;
     margin-bottom: 150px; */
@@ -66,7 +70,7 @@ section{
     object-fit: contain;
 }
 
-section img{
+section img {
     width: 0px;
     flex-grow: 1;
     object-fit: cover;
@@ -74,48 +78,51 @@ section img{
     transition: .5s ease;
 }
 
-section img:hover{
+section img:hover {
     cursor: pointer;
     width: 10%;
     opacity: 1;
     filter: contrast(120%);
 }
 
-.galery{
+.galery {
     padding: 20px;
 }
 
-.section{
+.section {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.subtopics{
+.subtopics {
     text-align: justify;
 }
 
-.navbar{
+.navbar {
+    flex-grow: 1;
+    flex-wrap: wrap;
     background-color: #6D2932;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 100%;
-    padding: 10px;
+    /* height: auto;
+    width: 100%; */
+    /* padding: 10px; */
+    width: 75%;
     position: fixed;
     top: 0;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 2000;
 }
 
-.containerNav{
+.containerNav {
     position: relative;
     margin-top: 20px;
 
 }
 
-button{
+button {
     background-color: transparent;
     cursor: pointer;
     color: #e4e5e5;
@@ -124,27 +131,24 @@ button{
     border-radius: 20px 40px 20px 40px;
 }
 
-header{
-    display: inline-block;
+header {
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon section{
+.icon section {
     width: 15%;
     height: auto;
 }
 
-.icon .iconImg{
+.icon .iconImg {
     width: 40px;
     opacity: 100;
-    &:hover{
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    &:hover {
         width: 50px;
     }
 }
-
-
-
-
-
-
