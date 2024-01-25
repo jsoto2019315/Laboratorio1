@@ -60,6 +60,7 @@ section{
     height: 200px;
     justify-content: center;
     align-content: center;
+    object-fit: contain;
 }
 
 section img{
@@ -72,13 +73,19 @@ section img{
 
 section img:hover{
     cursor: pointer;
-    width: 5%;
+    width: 10%;
     opacity: 1;
     filter: contrast(120%);
 }
 
 .galery{
     padding: 20px;
+}
+
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
