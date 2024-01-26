@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/nairi');
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -10,11 +12,9 @@ body{
     height: auto;
     scroll-behavior: smooth;
     font-family: 'Nairi', sans-serif;
-    background: rgb(232, 216, 196);
-    background: linear-gradient(274deg, rgba(232, 216, 196, 1) 35%, rgba(170, 73, 87, 1) 90%, rgba(133, 69, 78, 1) 100%);
-
 }
 
+/* diseño de barra lateral */
 .nav{
     width: 300px;
 }
@@ -33,7 +33,7 @@ body{
 }
 
 .nav__link--inside:hover{
-    background: #78353d;
+    background: #1b5879;
 }
 
 .list{
@@ -43,7 +43,7 @@ body{
     display: flex;
     justify-content: start;
     flex-direction: column;
-    background: #6c2c34 ;
+    background: #164863 ;
     z-index: 9999;
 }
 
@@ -52,6 +52,7 @@ body{
     width: 100%;
     text-align: center;
     overflow: hidden;
+    text-align: justify;
 }
 
 .list__item--click{
@@ -78,8 +79,59 @@ body{
 .list__show{
     width: 80%;
     margin-left: auto;
-    border-left: 2px solid #561C24;
+    border-left: 2px solid #427D9D;
     list-style: none;
     transition: height .4s;
     height: 0;
 }
+
+/* diseño navbar superior  */
+.generalContainer{
+    padding-left: 269px;
+}
+.navbar {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-color: #d1b123 ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 82%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    border-radius: 0 0 10px 10px;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #e4e5e5;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px 40px 20px 40px;
+}
+
+.icon section {
+    width: 15%;
+    height: auto;
+}
+
+.icon .iconImg {
+    width: 80px;
+    opacity: 100;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 10px 0 10px 0;
+
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Diseño de información general */
