@@ -207,7 +207,7 @@ header {
 .App1 button{
     display: block;
     margin-left:152px;
-    background-color: #dc841c;
+    background-color: #012E40;
     padding: 9px 19px;
     border-radius: 10px;
     border: none;
@@ -222,12 +222,13 @@ header {
 .App2 button{
     display: flex;
     align-content: center;
-    background-color: #dc841c;
+    background-color: #012E40;
     padding: 9px 19px;
     border-radius: 10px;
     border: none;
     text-decoration: none;
     cursor: pointer;
+    margin-left:160px;    
 }
 
 .image2{
