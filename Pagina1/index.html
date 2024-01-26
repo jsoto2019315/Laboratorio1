@@ -10,36 +10,88 @@
 </head>
 
 <body class="container">
-    <!-- header de la página -->
-    <header>
-        <nav class="navbar">
-            <ul class="icon">
-                <a href="#title">
-                    <section>
-                        <img src="Resources/Images/icon.png" class="iconImg">
-                    </section>
-                </a>
-            </ul>
-            <ul><a href="#origenes"><button>Origenes</button></a></ul>
-            <ul><a href="#invasionBritanica"><button>Invasión Británica</button></a></ul>
-            <ul><a href="#psicodelia"><button>Psicodelia</button></a></ul>
-            <ul><a href="#hardRock"><button>Hard Rock</button></a></ul>
-            <ul><a href="#britPop"><button>Britpop</button></a></ul>
-            <ul><a href="#nuevoMilenio"><button>Nueva era</button></a></ul>
-        </nav>
-    </header>
-
     <!-- Menú lateral -->
     <nav class="nav">
         <ul class="list">
-            <li class="list__button">
-                <img src="Resources/Images/dashboard.svg" class="lis__img">
-                <a href="#" class="nav__link">inicio</a>
+            <li class="list__item">
+                <div class="list__buttom">
+                    <img src="Resources/Images/dashboard.svg" class="list__img">
+                    <a href="#" class="nav__link">Inicio</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__buttom list__buttom--click">
+                    <img src="Resources/Images/docs.svg " class="list__img">
+                    <a href="#" class="nav__link">Servicios</a>
+                    <img src="Resources/Images/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item">
+                <div class="list__buttom">
+                    <img src="Resources/Images/states.svg" class="list__img">
+                    <a href="#" class="nav__link">Estadisticas</a>
+                </div>
+            </li>
+
+            <li class="list__item list__item--click">
+                <div class="list__buttom list__buttom--click">
+                    <img src="Resources/Images/bell.svg " class="list__img">
+                    <a href="#" class="nav__link">Notificaciones </a>
+                    <img src="Resources/Images/arrow.svg" class="list__arrow">
+                </div>
+
+                <ul class="list__show">
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                    <li class="list__inside">
+                        <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="list__item">
+                <div class="list__buttom">
+                    <img src="Resources/Images/contacto.svg" class="list__img">
+                    <a href="#" class="nav__link">Contacto</a>
+                </div>
             </li>
         </ul>
     </nav>
 
-    <!-- Cuerpo e información de la página -->
+
+    <div class="generalInfoContainer" style="padding-left: 200px;">
+        <!-- header de la página -->
+        <header>
+            <nav class="navbar">
+                <ul class="icon">
+                    <a href="#title">
+                        <section>
+                            <img src="Resources/Images/icon.png" class="iconImg">
+                        </section>
+                    </a>
+                </ul>
+                <ul><a href="#origenes"><button>Origenes</button></a></ul>
+                <ul><a href="#invasionBritanica"><button>Invasión Británica</button></a></ul>
+                <ul><a href="#psicodelia"><button>Psicodelia</button></a></ul>
+                <ul><a href="#hardRock"><button>Hard Rock</button></a></ul>
+                <ul><a href="#britPop"><button>Britpop</button></a></ul>
+                <ul><a href="#nuevoMilenio"><button>Nueva era</button></a></ul>
+            </nav>
+        </header>
+
+        <!-- Cuerpo e información de la página -->
     <div class="general">
         <div class="titleDiv" id="title">
             <h1 class="title">Historia del rock y su influencia</h1>
@@ -182,8 +234,15 @@
         </div>
     </div>
 
-<!-- importación del script -->
-<script src="Logic/logic.js"></script>
+    </div>
+
+
+    
+
+    
+
+    <!-- importación del script -->
+    <script src="Logic/logic.js"></script>
 
 </body>
 
