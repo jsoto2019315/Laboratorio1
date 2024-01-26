@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
+    scroll-margin-top: 60px;
 }
 
 body {
@@ -154,10 +155,6 @@ header {
     display: flex;
     justify-content: start;
     align-items: start;
-
-    &:hover {
-        width: 50px;
-    }
 }
 
 
@@ -168,7 +165,7 @@ header {
 }
 
 .nav__link{
-    color: #303440;
+    color: #e4e5e5;
     display: block;
     padding: 15px 0;
     text-decoration: none;
@@ -191,7 +188,7 @@ header {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    background: #998d7fda;
+    background: #6c2c34 ;
     z-index: 9999;
 }
 
