@@ -1,0 +1,235 @@
+@import url('https://fonts.cdnfonts.com/css/nairi');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-margin-top: 100px;
+}
+
+body {
+    height: auto;
+    font-family: 'Nairi', sans-serif;
+    background: rgb(1, 46, 64);
+    background: linear-gradient(115deg, rgba(1, 46, 64, 1) 0%, rgba(60, 166, 166, 1) 100%);
+    background-repeat: no-repeat;
+}
+
+/* estilo navbar superior */
+.generalContainer{
+    padding-left: 269px;
+}
+.navbar {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    flex-flow: row;
+    background-color: #012E40;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 82%;
+    position: fixed;
+    top: 0;
+    z-index: 2000;
+    border-radius: 0 0 10px 10px;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    color: #e4e5e5;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px 40px 20px 40px;
+}
+
+.icon section {
+    width: 15%;
+    height: auto;
+}
+
+.icon .iconImg {
+    width: 60px;
+    opacity: 100;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    padding: 10px 0 10px 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* estilo navbar lateral */
+.nav{
+    width: 300px;
+}
+
+.nav__link{
+    color: #e4e5e5;
+    display: block;
+    padding: 15px 0;
+    text-decoration: none;
+    text-align: justify;
+}
+
+.nav__link--inside{
+    border-radius: 6px;
+    padding-left: 20px;
+    text-align: left;
+}
+
+.nav__link--inside:hover{
+    background: rgba(147, 217, 217, 0.427);
+}
+
+.list{
+    position: fixed;
+    width: 18%;
+    height: 100vh;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    background: #026773 ;
+    z-index: 9999;
+}
+
+.list__item{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.list__item--click{
+    cursor: pointer;
+}
+
+.list__buttom{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.arrow .list__arrow{
+    transform: rotate(90deg);
+}
+
+.list__arrow{
+    margin-left: auto;
+    transition: transform .3s;
+}
+
+.list__show{
+    width: 80%;
+    margin-left: auto;
+    border-left: 2px solid #F2E3D5;
+    list-style: none;
+    transition: height .4s;
+    height: 0;
+}
+
+/* Estilo del cuerpo */
+.cuerpo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    color: #e4e5e5d3;
+}
+
+.titleDiv{
+    display: flex;
+    justify-content: center;
+    padding: 5px 0 20px 0;
+}
+
+.sobreMi{
+    margin-top: 50px;
+}
+.info{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    align-items: start;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    color: #e4e5e5d3;
+    font-size: 20px;
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+    text-align: justify;
+}
+
+.info img{
+    width: 220px;
+}
+
+.info section{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+.tecnologias p{
+    margin-bottom: 15px;
+}
+
+.tecnologias ul{
+    margin-left: 60px;
+}
+
+.tecnologias ul img{
+    margin: 15px 0 10px 45px;
+    transition: all .5s;
+    &:hover{
+        width: 30%;
+    }
+}
+
+.App1 p{
+    margin-top: 20px;
+}
+
+.image1{
+    margin-left: 140px;
+}
+
+.App1 button{
+    display: block;
+    margin-left:152px;
+    background-color: #dc841c;
+    padding: 9px 19px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.App2 p{
+    margin-top: 20px;
+}
+
+.App2 button{
+    display: flex;
+    align-content: center;
+    background-color: #dc841c;
+    padding: 9px 19px;
+    border-radius: 10px;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image2{
+    margin: 15px 0 0 60px;
+}

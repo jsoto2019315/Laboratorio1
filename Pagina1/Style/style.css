@@ -186,7 +186,7 @@ header {
     width: 18%;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     flex-direction: column;
     background: #6c2c34 ;
     z-index: 9999;
