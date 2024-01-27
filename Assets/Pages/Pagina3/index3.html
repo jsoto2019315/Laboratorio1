@@ -79,7 +79,7 @@
         <header>
             <nav class="navbar">
                 <ul class="icon">
-                    <a href="#title">
+                    <a href="#">
                         <section>
                             <img src="Resources/KinalLogo2.png" class="iconImg">
                         </section>
@@ -91,9 +91,52 @@
 
                 <button onclick="toggleMenu()">Educación</button>
                 <ul id="menuDesplegable">
-                    <li><a href="#">Ciclo Básico</a></li>
-                    <li><a href="#">Diversificado</a></li>
-                    <li><a href="#">Escuela Superior</a></li>
+                    <li style="color: #e4e5e5;">
+                        <label for="btn-modal" style="cursor: pointer;">Ciclo Básico</label>
+                    </li>
+                    <input type="checkbox" id="btn-modal">
+                    <div class="container-modal">
+                        <div class="content-modal">
+                            <img src="https://static.wixstatic.com/media/128120_33c44314186647eeaffb31ad4fa98547~mv2.png/v1/fill/w_443,h_443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sin-t%C3%ADtulo-1Mesa-de-trabajo-1-copia.png" alt="">
+                            <h2>Ciclo Básico</h2>
+                            <p>Kinal ofrece su programa de Educación General Básica para todos aquellos jóvenes que buscan una orientación técnica y excelencia académica.</p>
+                            <div class="btn-cerrar">
+                                <label for="btn-modal">Cerrar</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li style="color: #e4e5e5;">
+                        <label for="btn-modal2" style="cursor: pointer;">Diversificado</label>
+                    </li>
+                    <input type="checkbox" id="btn-modal2">
+                    <div class="container-modal2">
+                        <div class="content-modal2">
+                            <img src="https://static.wixstatic.com/media/128120_a18b9f2d05654088ad6efd2ce39e31d6~mv2.png/v1/fill/w_443,h_443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sin-t%C3%ADtulo-1Mesa-de-trabajo-1.png" alt="">
+                            <h2>Diversificado</h2>
+                            <p>Durante 3 años se prepara al joven de forma técnica y académica, el egresado estará listo trabajar en el ramo técnico de la especialidad que eligió estudiar; el título obtenido le permitirá ingresar a la universidad.
+                            </p>
+                            <div class="btn-cerrar2">
+                                <label for="btn-modal2">Cerrar</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <li style="color: #e4e5e5;">
+                        <label for="btn-modal3" style="cursor: pointer;">Escuela Técnica Superior</label>
+                    </li>
+                    <input type="checkbox" id="btn-modal3">
+                    <div class="container-modal3">
+                        <div class="content-modal3">
+                            <img src="https://static.wixstatic.com/media/128120_c006ae5a357d4f5ab504868c10adf0c8~mv2.png/v1/fill/w_443,h_443,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Sin-título-1Mesa-de-trabajo-1-copia-2.png" alt="">
+                            <h2>Escuela Técnica Superior</h2>
+                            <p>Contamos con más de 30 especialidades técnicas y tecnológicas que pueden favorecer tu crecimiento y/o tu inserción laboral.
+                            </p>
+                            <div class="btn-cerrar3">
+                                <label for="btn-modal3">Cerrar</label>
+                            </div>
+                        </div>
+                    </div>
                 </ul>
             </nav>
         </header>
@@ -130,6 +173,9 @@
                 superación de alumnos y el medio para servir a los demás.
             </p>
         </div>
+
+        <!-- contenido de la ventana -->
+
     </div>
 
     <script src="/Assets/Scripts/logic3.js"></script>
