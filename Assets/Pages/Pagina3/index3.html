@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="/Assets/Styles/style3.css">
     <title>Academics KINAL</title>
 </head>
+
 <body>
     <!-- Menú lateral -->
     <nav class="nav">
@@ -49,18 +51,21 @@
 
                 <ul class="list__show">
                     <li class="list__inside">
-                        <a href="/Assets/Pages/Pagina2/index.html#sobreMi" class="nav__link nav__link--inside">Sobre Mi</a>
+                        <a href="/Assets/Pages/Pagina2/index.html#sobreMi" class="nav__link nav__link--inside">Sobre
+                            Mi</a>
                     </li>
                     <li class="list__inside">
-                        <a href="/Assets/Pages/Pagina2/index.html#tecnologias" class="nav__link nav__link--inside">Tecnologías</a>
+                        <a href="/Assets/Pages/Pagina2/index.html#tecnologias"
+                            class="nav__link nav__link--inside">Tecnologías</a>
                     </li>
                     <li class="list__inside">
-                        <a href="/Assets/Pages/Pagina2/index.html#proyectos" class="nav__link nav__link--inside">Proyectos</a>
+                        <a href="/Assets/Pages/Pagina2/index.html#proyectos"
+                            class="nav__link nav__link--inside">Proyectos</a>
                     </li>
                 </ul>
             </li>
 
-            
+
 
             <li class="list__item">
                 <div class="list__buttom">
@@ -81,23 +86,53 @@
                     </a>
                 </ul>
                 <ul><a href="#"><button>Inicio</button></a></ul>
-                <ul><a href="#"><button>¿Quiénes Somos?<button></a></ul>
-                <ul><a href="#"><button>Educación</button></a></ul>
+
+                <ul><a href="#quienesSomos"><button>¿Quiénes Somos?<button></a></ul>
+
+                <button onclick="toggleMenu()">Educación</button>
+                <ul id="menuDesplegable">
+                    <li><a href="#">Ciclo Básico</a></li>
+                    <li><a href="#">Diversificado</a></li>
+                    <li><a href="#">Escuela Superior</a></li>
+                </ul>
             </nav>
         </header>
-        <div class="carrusel-container">
-            <div class="slide">
-                <img src="https://images.opusdei.org/?url=https://odnmedia.s3.amazonaws.com/image/opus-dei-caaf182b68e1099bf99cf18d4b52ade6.jpg&w=600&output=jpg&il&bg=white" alt="Imagen 1">
+        <div id="carousel-container">
+            <div id="carousel-wrapper">
+                <div class="carousel-item">
+                    <img src="https://scontent.fgua2-2.fna.fbcdn.net/v/t39.30808-6/336365519_1325398018079080_8997128068949857987_n.png?stp=dst-png_p720x720&_nc_cat=108&ccb=1-7&_nc_sid=783fdb&_nc_ohc=lda2Ukq9we8AX84XdYc&_nc_ht=scontent.fgua2-2.fna&oh=00_AfALT_Kipu3PtEatLpaVbhKvEtVxp6d0Jbie8BynfD_4pQ&oe=65B9C85B"
+                        alt="Imagen 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.wixstatic.com/media/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg/v1/fill/w_640,h_486,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/128120_7f3b9fbf981448809326f69585851cb9~mv2.jpg"
+                        alt="Imagen 2" class="img2">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.wixstatic.com/media/128120_dec06d21c5194fedbe369e0de1e7cc8c~mv2.jpg/v1/fill/w_560,h_246,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_5935_JPG.jpg"
+                        alt="Imagen 3" class="img3">
+                </div>
+                <!-- Agrega más imágenes según sea necesario -->
             </div>
-            <div class="slide">
-                <img src="imagen2.jpg" alt="Imagen 2">
-            </div>
-            <div class="slide">
-                <img src="imagen3.jpg" alt="Imagen 3">
-            </div>
+            <button id="prev-button" class="carousel-button" onclick="prevSlide()"><strong>❮</strong> </button>
+            <button id="next-button" class="carousel-button" onclick="nextSlide()"><strong>❯</strong> </button>
+        </div>
+        <!-- Contenido del inico -->
+        <div class="contenidoInicio">
+            <h1 class="title" id="quienesSomos">
+                El Trabajo bien hecho
+            </h1>
+            <p>
+                Kinal es un Centro Educativo privado, no lucrativo, dirigido a la formación técnica profesional de
+                jóvenes y adultos, de beneficio colectivo y asistencia social en favor de los sectores más necesitados
+                de la comunidad.
+
+                Nuestro valor fundamental es enseñar a realizar el trabajo bien hecho, que sea la base de la
+                superación de alumnos y el medio para servir a los demás.
+            </p>
         </div>
     </div>
 
     <script src="/Assets/Scripts/logic3.js"></script>
 </body>
+
 </html>
